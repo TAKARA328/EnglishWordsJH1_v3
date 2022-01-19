@@ -1,0 +1,70 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "ja-JP": {
+          "summary": "このスキルは、中学一年で習う英単語の意味を覚えるためのスキルです。約300語登録されています。スキルが英単語を言うので、その英単語の意味を日本語で答えてください。",
+          "examplePhrases": [
+            "アレクサ、中学一年の英単語を開いて",
+            "スペルを教えて",
+            "もう一回言って"
+          ],
+          "keywords": [
+            "英語",
+            "英単語",
+            "初心者",
+            "中学一年生",
+            "学習"
+          ],
+          "name": "中学一年の英単語",
+          "description": "【概要】\nこのスキルは、中学一年で習う英単語の意味を覚えるためのスキルです。中学一年生の英語の教科書から、よく使うと思われる約300語を登録しています。\nスキルが英単語を言うので、その英単語の意味を日本語で答えるという簡単なスキルです。\nスキルを起動した時に出題される問題数は5問です。短時間で終わるため少しの時間で毎日続けることができます。\n\n定型アクションに設定して定期的に実行することをおすすめします。\n\n【使用方法】\nスキルから問題が出題されますので、意味を答えてください。\n\n例）\nスキル　：answer の意味は何でしょう？\nユーザー：答え（または、回答）\n\n【操作方法】\nスキルの起動　：アレクサ、中学一年の英単語をひらいて\nスペルを聞く　：スペルを教えて\nもう一度聞く　：もう一回言って\n問題を飛ばす　：わかりません\nスキルのヘルプ：ヘルプ\n\n【定型アクション設定方法】\n１．アレクサアプリから新しい定型アクションを作成します。\n２．「実行条件の設定」から「時間を指定」を選択し、スキルを起動したい時間を設定します。\n３．「アクションを追加」から「スキル」を選択し、「中学一年の英単語」スキルを設定します。\n４．定型アクションを保存します。\n\n定型アクション簡単設定URL\nhttps://alexa.amazon.com/routines/shared/UGBvip-YT-27nJZ5C-4xrQ\n\n【注意】\nEchoデバイスがうまく音声を認識できなかった場合、正解を言っているにもかかわらず不正解と判定される場合があります。\n\n【その他】\n中学一年生の教科書をベースに作成しています。\n回答を間違えたときにお伝えする\"正解の単語の意味\"は教科書に記載されいてる内容を話すようにしています。\n正しく認識しない等の問題がありましたらコメント欄に記載いただければと思います。\n",
+          "updatesDescription": "結果をAlexaカードに表示されるようにしました。\n答えがわからない場合、スキップできるように修正しました。",
+          "smallIconUri": "file://assets/images/ja-JP_smallIconUri.png",
+          "largeIconUri": "file://assets/images/ja-JP_largeIconUri.png"
+        }
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "APL対応しました。APL Smart Motion extensionの設定を追加しました。再審査お願いします。\n【操作方法】に「問題を飛ばす」を追加しました。\n\nスキルを起動すると英単語の問題が出題されますので、その単語の意味を日本語で答えて下さい。１回の起動で５問出題します。\nその他の操作として、スキルヘルプを話す機能と、もう一度単語を言う機能と、スペルをアルファベットで話す機能があります。",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": [
+        "JP"
+      ]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-west-2:023972248338:function:ask-englishwordsjh1v3-default-default-1616216390018"
+        },
+        "interfaces": [
+          {
+            "type": "ALEXA_PRESENTATION_APL"
+          },
+          {
+            "type": "ALEXA_EXTENSION",
+            "requestedExtensions": [
+              {
+                "uri": "alexaext:smartmotion:10"
+              }
+            ],
+            "autoInitializedExtensions": [
+              {
+                "uri": "alexaext:smartmotion:10",
+                "settings": {
+                  "wakeWordResponse": "followOnWakeWord"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    },
+    "manifestVersion": "1.0"
+  }
+}

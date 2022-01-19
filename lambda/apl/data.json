@@ -1,0 +1,15 @@
+{
+    "myData": {
+        "large": {
+            "bgImage"   : "https://dl.dropboxusercontent.com/s/17lmzxcum9voe87/bg_b.png",
+            "titleImage": "https://dl.dropboxusercontent.com/s/0prbw9uihf0cdw9/title_l.png",
+            "stampImage": "https://dl.dropboxusercontent.com/s/67zy8orvddasab9/badge00.png"
+        },
+        "small": {
+            "bgImage"   : "https://dl.dropboxusercontent.com/s/17lmzxcum9voe87/bg_b.png",
+            "titleImage": "https://dl.dropboxusercontent.com/s/lvvvl01wve269f3/title_s.png",
+            "stampImage": "https://dl.dropboxusercontent.com/s/67zy8orvddasab9/badge00.png"
+        },
+        "correcttext" :"test"
+    }
+}

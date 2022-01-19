@@ -1,0 +1,196 @@
+{
+  "type": "APL",
+  "version": "1.6",
+  "theme": "dark",
+  "import": [
+    {
+      "name": "alexa-viewport-profiles",
+      "version": "1.1.0"
+    }
+  ],
+  "extensions": [
+    {
+      "name": "SmartMotion",
+      "uri": "alexaext:smartmotion:10"
+    }
+  ],
+  "settings": {
+    "SmartMotion": {
+      "deviceStateName": "MyDeviceState",
+      "wakeWordResponse": "turnToWakeWord"
+    }
+  },
+  "SmartMotion:OnDeviceStateChanged": [
+    {
+      "type": "SetValue",
+      "componentId": "mainContainerId",
+      "property": "FaultStatus",
+      "value": "${event.changed.errorCode != 0 ? 'ERROR' : 'NORMAL'}"
+    }
+  ],
+  "onMount": [
+    {
+      "type": "SmartMotion:PlayNamedChoreo",
+      "name": "ScreenImpactCenter",
+      "delay": 2000
+    }
+  ],
+  "mainTemplate": {
+    "parameters": [
+      "myData"
+    ],
+    "items": [
+      {
+        "when": "${@viewportProfile == @hubRoundSmall}",
+        "type": "Container",
+        "width": "100vw",
+        "height": "100vh",
+        "item": [
+          {
+            "type": "Image",
+            "scale": "best-fill",
+            "align": "center",
+            "width": "100vw",
+            "height": "100vh",
+            "source": "${myData.small.bgImage}",
+            "position": "absolute"
+          },
+          {
+            "type": "AlexaHeader",
+            "headerTitle": "",
+            "headerAttributionImage": ""
+          },
+          {
+            "type": "Container",
+            "id": "mainContainerId",
+            "position": "absolute",
+            "top": 120,
+            "direction": "column",
+            "bind": [
+              {
+                "name": "FaultStatus",
+                "value": ""
+              }
+            ],
+            "items": [
+              {
+                "type": "Image",
+                "id": "title",
+                "source": "${myData.small.titleImage}",
+                "width": "300",
+                "height": "44",
+                "scale": "best-fit",
+                "align": "center",
+                "opacity": 1
+              },
+              {
+                "type": "Image",
+                "id": "spacer",
+                "source": "${myData.small.titleImage}",
+                "width": "300",
+                "height": "44",
+                "scale": "best-fit",
+                "align": "center",
+                "opacity": 0
+              },
+              {
+                "type": "Text",
+                "id": "resultText",
+                "fontSize": "20dp",
+                "width": "200",
+                "text": "${myData.correcttext}"
+              }
+            ],
+            "alignItems": "center",
+            "justifyContent": "start",
+            "alignSelf": "center"
+          }
+        ],
+        "justifyContent": "center"
+      },
+      {
+        "type": "Container",
+        "width": "100vw",
+        "height": "100vh",
+        "item": [
+          {
+            "type": "Image",
+            "width": "100vw",
+            "height": "100vh",
+            "scale": "best-fill",
+            "align": "center",
+            "source": "${myData.large.bgImage}",
+            "position": "absolute"
+          },
+          {
+            "type": "AlexaHeader",
+            "headerTitle": "",
+            "headerAttributionImage": ""
+          },
+          {
+            "type": "Container",
+            "id": "mainContainerId",
+            "direction": "column",
+            "bind": [
+              {
+                "name": "FaultStatus",
+                "value": ""
+              }
+            ],
+            "items": [
+              {
+                "type": "Image",
+                "id": "title",
+                "source": "${myData.large.titleImage}",
+                "width": "548",
+                "height": "80",
+                "scale": "best-fit",
+                "align": "center",
+                "opacity": 1
+              },
+              {
+                "type": "Image",
+                "id": "spacer",
+                "source": "${myData.large.titleImage}",
+                "width": "548",
+                "height": "80",
+                "scale": "best-fit",
+                "align": "center",
+                "opacity": 0
+              },
+              {
+                "type": "Container",
+                "id": "mainContainerId",
+                "direction": "row",
+                "items": [
+                  {
+                    "type": "Image",
+                    "id": "title",
+                    "source": "${myData.large.stampImage}",
+                    "width": "200",
+                    "height": "200",
+                    "scale": "best-fit",
+                    "align": "center",
+                    "opacity": 1
+                  },
+                  {
+                    "type": "Text",
+                    "id": "resultText",
+                    "paddingLeft": "40dp",
+                    "fontSize": "30dp",
+                    "width": "300",
+                    "text": "${myData.correcttext}"
+                  }
+                ]
+              }
+            ],
+            "alignItems": "center",
+            "justifyContent": "start",
+            "alignSelf": "center"
+          }
+        ],
+        "justifyContent": "center"
+      }
+    ]
+  }
+}

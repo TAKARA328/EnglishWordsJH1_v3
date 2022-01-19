@@ -1,0 +1,3466 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "中学一年の英単語",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SkipIntent",
+                    "samples": [
+                        "わかりません",
+                        "スキップ",
+                        "知らない",
+                        "知らん",
+                        "分からない",
+                        "パス",
+                        "パスして"
+                    ]
+                },
+                {
+                    "name": "SpellIntent",
+                    "samples": [
+                        "スペルは",
+                        "スペルを教えて",
+                        "スペルを言って",
+                        "どう書くの",
+                        "どんなスペルですか"
+                    ]
+                },
+                {
+                    "name": "AgainIntent",
+                    "samples": [
+                        "もう一回言って",
+                        "もう一度言って",
+                        "聞こえなかった",
+                        "また言って"
+                    ]
+                },
+                {
+                    "name": "AnswerIntent",
+                    "slots": [
+                        {
+                            "name": "WordName",
+                            "type": "WordsListJHOne"
+                        }
+                    ],
+                    "samples": [
+                        "{WordName} かな",
+                        "{WordName} で",
+                        "{WordName} です",
+                        "えと {WordName}",
+                        "えっと {WordName}",
+                        "うんと {WordName}"
+                    ]
+                },
+                {
+                    "name": "AnswerOnlyIntent",
+                    "slots": [
+                        {
+                            "name": "WordName",
+                            "type": "WordsListJHOne"
+                        }
+                    ],
+                    "samples": [
+                        "{WordName}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "values": [
+                        {
+                            "id": "BAN",
+                            "name": {
+                                "value": "晩",
+                                "synonyms": [
+                                    "ばん"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "HANA",
+                            "name": {
+                                "value": "花",
+                                "synonyms": [
+                                    "はな"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "HANASU",
+                            "name": {
+                                "value": "話す",
+                                "synonyms": [
+                                    "はなす",
+                                    "離す"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "KAKU",
+                            "name": {
+                                "value": "かく",
+                                "synonyms": [
+                                    "書く",
+                                    "描く"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "HI",
+                            "name": {
+                                "value": "ひ",
+                                "synonyms": [
+                                    "日",
+                                    "火"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "IE",
+                            "name": {
+                                "value": "いえ",
+                                "synonyms": [
+                                    "家"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ITSUMO",
+                            "name": {
+                                "value": "いつも",
+                                "synonyms": [
+                                    "何時も"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "IU",
+                            "name": {
+                                "value": "いう",
+                                "synonyms": [
+                                    "言う",
+                                    "云う",
+                                    "ゆう"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "KIKU",
+                            "name": {
+                                "value": "きく",
+                                "synonyms": [
+                                    "聞く",
+                                    "聴く"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "MONDAI",
+                            "name": {
+                                "value": "問題",
+                                "synonyms": [
+                                    "もんだい"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "OOKUNO",
+                            "name": {
+                                "value": "多くの",
+                                "synonyms": [
+                                    "おおくの"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "TAKUSANNO",
+                            "name": {
+                                "value": "たくさんの",
+                                "synonyms": [
+                                    "沢山の"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "TANOSHII",
+                            "name": {
+                                "value": "楽しい",
+                                "synonyms": [
+                                    "たのしい"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "TOBU",
+                            "name": {
+                                "value": "飛ぶ",
+                                "synonyms": [
+                                    "とぶ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "TORU",
+                            "name": {
+                                "value": "取る",
+                                "synonyms": [
+                                    "とる",
+                                    "捕る",
+                                    "撮る",
+                                    "盗る"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "YOI",
+                            "name": {
+                                "value": "よい",
+                                "synonyms": [
+                                    "良い"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "about",
+                            "name": {
+                                "value": "なになにについて",
+                                "synonyms": [
+                                    "なになにについての",
+                                    "なになにに関しての",
+                                    "について",
+                                    "についての",
+                                    "に関しての"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "after",
+                            "name": {
+                                "value": "なになにのあとに",
+                                "synonyms": [
+                                    "なになにのあとの",
+                                    "なになにのうしろに",
+                                    "あとに"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "afternoon",
+                            "name": {
+                                "value": "午後",
+                                "synonyms": [
+                                    "ピーエム",
+                                    "ごご"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ago",
+                            "name": {
+                                "value": "なになに前に",
+                                "synonyms": [
+                                    "今からなになに前"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "all",
+                            "name": {
+                                "value": "すべてのもの",
+                                "synonyms": [
+                                    "全て",
+                                    "全部"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "always",
+                            "name": {
+                                "value": "常に",
+                                "synonyms": [
+                                    "必ずしも"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "animal",
+                            "name": {
+                                "value": "動物",
+                                "synonyms": [
+                                    "どうぶつ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "answer",
+                            "name": {
+                                "value": "答え",
+                                "synonyms": [
+                                    "回答"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "any",
+                            "name": {
+                                "value": "いくつかの",
+                                "synonyms": [
+                                    "何人かの",
+                                    "いくらかの"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "anything",
+                            "name": {
+                                "value": "何でも",
+                                "synonyms": [
+                                    "何か"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "arm",
+                            "name": {
+                                "value": "腕",
+                                "synonyms": [
+                                    "うで"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "around",
+                            "name": {
+                                "value": "なになにのまわりを",
+                                "synonyms": [
+                                    "なになにの周囲に",
+                                    "まわりに",
+                                    "まわりを",
+                                    "周囲"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "art",
+                            "name": {
+                                "value": "芸術",
+                                "synonyms": [
+                                    "美術",
+                                    "げいじゅつ",
+                                    "びじゅつ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ask",
+                            "name": {
+                                "value": "尋ねる",
+                                "synonyms": [
+                                    "問う",
+                                    "たずねる"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "aunt",
+                            "name": {
+                                "value": "叔母",
+                                "synonyms": [
+                                    "伯母さん",
+                                    "おば",
+                                    "おばさん"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "back",
+                            "name": {
+                                "value": "後ろへ",
+                                "synonyms": [
+                                    "あとへ",
+                                    "元のところに",
+                                    "帰って",
+                                    "返して",
+                                    "背中",
+                                    "背後"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "bag",
+                            "name": {
+                                "value": "袋",
+                                "synonyms": [
+                                    "かばん",
+                                    "バッグ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ball",
+                            "name": {
+                                "value": "ボール",
+                                "synonyms": [
+                                    "球",
+                                    "玉"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "bath",
+                            "name": {
+                                "value": "入浴",
+                                "synonyms": [
+                                    "ふろ",
+                                    "風呂"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "beautiful",
+                            "name": {
+                                "value": "美しい",
+                                "synonyms": [
+                                    "綺麗な"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "because",
+                            "name": {
+                                "value": "なぜならなになにだから",
+                                "synonyms": [
+                                    "なぜなら"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "bed",
+                            "name": {
+                                "value": "ベッド",
+                                "synonyms": [
+                                    "寝床",
+                                    "寝台",
+                                    "ねどこ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "before",
+                            "name": {
+                                "value": "なになにの前に",
+                                "synonyms": [
+                                    "まえに",
+                                    "の前に"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "behind",
+                            "name": {
+                                "value": "なになにの後ろに",
+                                "synonyms": [
+                                    "うしろに",
+                                    "の後ろに"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "bell",
+                            "name": {
+                                "value": "鈴",
+                                "synonyms": [
+                                    "鐘"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "belt",
+                            "name": {
+                                "value": "ベルト",
+                                "synonyms": [
+                                    "バンド",
+                                    "帯"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "big",
+                            "name": {
+                                "value": "大きな",
+                                "synonyms": [
+                                    "大きい"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "bike",
+                            "name": {
+                                "value": "バイク",
+                                "synonyms": [
+                                    "自転車"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "bird",
+                            "name": {
+                                "value": "鳥",
+                                "synonyms": [
+                                    "とり"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "birthday",
+                            "name": {
+                                "value": "誕生日",
+                                "synonyms": [
+                                    "バースデー"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "blossom",
+                            "name": {
+                                "value": "果実の花",
+                                "synonyms": [
+                                    "咲く",
+                                    "開花する"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "body",
+                            "name": {
+                                "value": "体",
+                                "synonyms": [
+                                    "肉体",
+                                    "からだ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "book",
+                            "name": {
+                                "value": "本",
+                                "synonyms": [
+                                    "書物"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "borrow",
+                            "name": {
+                                "value": "借りる",
+                                "synonyms": [
+                                    "借り入れる"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "both",
+                            "name": {
+                                "value": "両方",
+                                "synonyms": [
+                                    "どちらも",
+                                    "双方",
+                                    "そうほう"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "boy",
+                            "name": {
+                                "value": "男の子",
+                                "synonyms": [
+                                    "少年"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "breakfast",
+                            "name": {
+                                "value": "朝食",
+                                "synonyms": [
+                                    "朝ごはん"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "brother",
+                            "name": {
+                                "value": "兄",
+                                "synonyms": [
+                                    "弟",
+                                    "男の兄弟",
+                                    "男兄弟"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "brush",
+                            "name": {
+                                "value": "磨く",
+                                "synonyms": [
+                                    "ブラシで磨く",
+                                    "みがく",
+                                    "掃く"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "bus",
+                            "name": {
+                                "value": "バス",
+                                "synonyms": [
+                                    "ばす"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "but",
+                            "name": {
+                                "value": "しかし",
+                                "synonyms": [
+                                    "だが"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "buy",
+                            "name": {
+                                "value": "買う",
+                                "synonyms": [
+                                    "購入",
+                                    "かう"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "bye",
+                            "name": {
+                                "value": "さようなら",
+                                "synonyms": [
+                                    "バイバイ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "cake",
+                            "name": {
+                                "value": "ケーキ",
+                                "synonyms": [
+                                    "ケーク",
+                                    "けいき"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "calendar",
+                            "name": {
+                                "value": "カレンダー",
+                                "synonyms": [
+                                    "暦"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "camera",
+                            "name": {
+                                "value": "カメラ",
+                                "synonyms": [
+                                    "かめら"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "can",
+                            "name": {
+                                "value": "なになにすることができる",
+                                "synonyms": [
+                                    "出来る",
+                                    "することができる",
+                                    "できる"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "cap",
+                            "name": {
+                                "value": "キャップ",
+                                "synonyms": [
+                                    "帽子"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "car",
+                            "name": {
+                                "value": "車",
+                                "synonyms": [
+                                    "乗用車",
+                                    "くるま"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "careful",
+                            "name": {
+                                "value": "注意深い",
+                                "synonyms": [
+                                    "慎重な"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "carry",
+                            "name": {
+                                "value": "持っている",
+                                "synonyms": [
+                                    "持ち歩く",
+                                    "持ち運ぶ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "case",
+                            "name": {
+                                "value": "ケース",
+                                "synonyms": [
+                                    "箱",
+                                    "なになに入れ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "cat",
+                            "name": {
+                                "value": "猫",
+                                "synonyms": [
+                                    "ネコ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "catch",
+                            "name": {
+                                "value": "つかまえる",
+                                "synonyms": [
+                                    "捕らえる"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "chair",
+                            "name": {
+                                "value": "椅子",
+                                "synonyms": [
+                                    "ぼうし"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "change",
+                            "name": {
+                                "value": "とりかえる",
+                                "synonyms": [
+                                    "変更",
+                                    "変化"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "cherry",
+                            "name": {
+                                "value": "サクラの木",
+                                "synonyms": [
+                                    "さくらんぼ",
+                                    "チェリー"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "child",
+                            "name": {
+                                "value": "子ども",
+                                "synonyms": [
+                                    "子",
+                                    "お子様"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "class",
+                            "name": {
+                                "value": "授業",
+                                "synonyms": [
+                                    "クラス",
+                                    "学級",
+                                    "階級",
+                                    "等級"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "clean",
+                            "name": {
+                                "value": "綺麗にする",
+                                "synonyms": [
+                                    "掃除する"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "clerk",
+                            "name": {
+                                "value": "店員",
+                                "synonyms": [
+                                    "係",
+                                    "職員"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "climb",
+                            "name": {
+                                "value": "登る",
+                                "synonyms": [
+                                    "よじ登る"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "close",
+                            "name": {
+                                "value": "閉じる",
+                                "synonyms": [
+                                    "閉める",
+                                    "閉まる"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "clothes",
+                            "name": {
+                                "value": "衣服",
+                                "synonyms": [
+                                    "いふく",
+                                    "服",
+                                    "ふく",
+                                    "衣類",
+                                    "いるい"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "club",
+                            "name": {
+                                "value": "クラブ",
+                                "synonyms": [
+                                    "ぶ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "coin",
+                            "name": {
+                                "value": "硬貨",
+                                "synonyms": [
+                                    "コイン"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "color",
+                            "name": {
+                                "value": "色",
+                                "synonyms": [
+                                    "いろ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "come",
+                            "name": {
+                                "value": "来る",
+                                "synonyms": [
+                                    "くる"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "computer",
+                            "name": {
+                                "value": "コンピューター",
+                                "synonyms": [
+                                    "電子計算機"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "cook",
+                            "name": {
+                                "value": "料理する",
+                                "synonyms": [
+                                    "クック"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "country",
+                            "name": {
+                                "value": "国",
+                                "synonyms": [
+                                    "国土",
+                                    "くに"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "course",
+                            "name": {
+                                "value": "もちろん",
+                                "synonyms": [
+                                    "勿論"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "cousin",
+                            "name": {
+                                "value": "いとこ",
+                                "synonyms": [
+                                    "従姉妹"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "cry",
+                            "name": {
+                                "value": "叫ぶ",
+                                "synonyms": [
+                                    "大声で言う",
+                                    "騒ぐ",
+                                    "泣く"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "culture",
+                            "name": {
+                                "value": "土壌",
+                                "synonyms": [
+                                    "習慣",
+                                    "風習",
+                                    "知的産物",
+                                    "文化"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "cute",
+                            "name": {
+                                "value": "かわいらしい",
+                                "synonyms": [
+                                    "かわいい",
+                                    "キュート"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "dance",
+                            "name": {
+                                "value": "踊る",
+                                "synonyms": [
+                                    "ダンスをする"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "daughter",
+                            "name": {
+                                "value": "娘",
+                                "synonyms": [
+                                    "むすめ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "day",
+                            "name": {
+                                "value": "いちにち",
+                                "synonyms": [
+                                    "１日",
+                                    "にち"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "dear",
+                            "name": {
+                                "value": "親愛なるなになに",
+                                "synonyms": [
+                                    "親愛なる"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "dictionary",
+                            "name": {
+                                "value": "辞書",
+                                "synonyms": [
+                                    "辞典"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "dinner",
+                            "name": {
+                                "value": "ディナー",
+                                "synonyms": [
+                                    "主な食事",
+                                    "夕食"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "disappear",
+                            "name": {
+                                "value": "無くなる",
+                                "synonyms": [
+                                    "見えなくなる",
+                                    "消え失せる",
+                                    "姿を消す"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "dog",
+                            "name": {
+                                "value": "犬",
+                                "synonyms": [
+                                    "イヌ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "dollar",
+                            "name": {
+                                "value": "ドル",
+                                "synonyms": [
+                                    "どる",
+                                    "ダラー"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "door",
+                            "name": {
+                                "value": "戸",
+                                "synonyms": [
+                                    "ドア",
+                                    "扉"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "down",
+                            "name": {
+                                "value": "下へ",
+                                "synonyms": [
+                                    "した",
+                                    "下の方へ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "draw",
+                            "name": {
+                                "value": "引く",
+                                "synonyms": [
+                                    "えがく",
+                                    "線を引く",
+                                    "絵を描く"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "drink",
+                            "name": {
+                                "value": "飲む",
+                                "synonyms": [
+                                    "飲料"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "drive",
+                            "name": {
+                                "value": "運転する",
+                                "synonyms": [
+                                    "ドライブする"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "drum",
+                            "name": {
+                                "value": "太鼓",
+                                "synonyms": [
+                                    "ドラム"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ear",
+                            "name": {
+                                "value": "耳",
+                                "synonyms": [
+                                    "ミミ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "easily",
+                            "name": {
+                                "value": "容易に",
+                                "synonyms": [
+                                    "簡単に",
+                                    "やすやすと"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "eat",
+                            "name": {
+                                "value": "食べる",
+                                "synonyms": [
+                                    "食事をする"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "egg",
+                            "name": {
+                                "value": "卵",
+                                "synonyms": [
+                                    "玉子",
+                                    "たまご",
+                                    "タマゴ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "else",
+                            "name": {
+                                "value": "他に",
+                                "synonyms": [
+                                    "その他"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "enjoy",
+                            "name": {
+                                "value": "楽しむ",
+                                "synonyms": [
+                                    "なになには楽しい",
+                                    "なになにするのが好きだ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "eraser",
+                            "name": {
+                                "value": "消しゴム",
+                                "synonyms": [
+                                    "消しゴム",
+                                    "ケシゴム"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "evening",
+                            "name": {
+                                "value": "夕方",
+                                "synonyms": [
+                                    "ゆうがた"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "every",
+                            "name": {
+                                "value": "すべての",
+                                "synonyms": [
+                                    "あらゆる",
+                                    "なになにごとに",
+                                    "すべての",
+                                    "ごとに"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "everyone",
+                            "name": {
+                                "value": "みんな",
+                                "synonyms": [
+                                    "全員"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "excuse",
+                            "name": {
+                                "value": "許す",
+                                "synonyms": [
+                                    "言い訳",
+                                    "言い分け",
+                                    "口実"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "eye",
+                            "name": {
+                                "value": "目",
+                                "synonyms": [
+                                    "視力",
+                                    "視線"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "face",
+                            "name": {
+                                "value": "顔",
+                                "synonyms": [
+                                    "表情"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "fall",
+                            "name": {
+                                "value": "秋",
+                                "synonyms": [
+                                    "落下",
+                                    "落ちる"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "family",
+                            "name": {
+                                "value": "家族",
+                                "synonyms": [
+                                    "一族",
+                                    "家族の者たち"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "far",
+                            "name": {
+                                "value": "遠くに",
+                                "synonyms": [
+                                    "とおく",
+                                    "遠い"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "fast",
+                            "name": {
+                                "value": "速く",
+                                "synonyms": [
+                                    "はやく"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "father",
+                            "name": {
+                                "value": "父",
+                                "synonyms": [
+                                    "父親",
+                                    "お父さん"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "favorite",
+                            "name": {
+                                "value": "お気に入りの",
+                                "synonyms": [
+                                    "大好きな",
+                                    "人気者",
+                                    "お気に入り"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "feed",
+                            "name": {
+                                "value": "えさをやる",
+                                "synonyms": [
+                                    "えさをあげる",
+                                    "食物を与える"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "festival",
+                            "name": {
+                                "value": "お祭り",
+                                "synonyms": [
+                                    "祭日",
+                                    "なになに祭",
+                                    "祭典",
+                                    "まつり"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "field",
+                            "name": {
+                                "value": "野原",
+                                "synonyms": [
+                                    "畑",
+                                    "田",
+                                    "牧草地",
+                                    "フィールド"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "fine",
+                            "name": {
+                                "value": "元気な",
+                                "synonyms": [
+                                    "調子のよい"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "finger",
+                            "name": {
+                                "value": "手の指",
+                                "synonyms": [
+                                    "ゆび",
+                                    "指"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "fire",
+                            "name": {
+                                "value": "火災",
+                                "synonyms": [
+                                    "かさい",
+                                    "火事"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "first",
+                            "name": {
+                                "value": "一番目の",
+                                "synonyms": [
+                                    "いちばんめの",
+                                    "最初の",
+                                    "初の"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "flower",
+                            "name": {
+                                "value": "くさばな",
+                                "synonyms": [
+                                    "草花"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "fly",
+                            "name": {
+                                "value": "フライ",
+                                "synonyms": [
+                                    "蝿"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "follow",
+                            "name": {
+                                "value": "なになにについていく",
+                                "synonyms": [
+                                    "移動する",
+                                    "従う",
+                                    "ついていく"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "food",
+                            "name": {
+                                "value": "食べ物",
+                                "synonyms": [
+                                    "食物",
+                                    "食料",
+                                    "フード"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "foot",
+                            "name": {
+                                "value": "足",
+                                "synonyms": [
+                                    "あし"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "for",
+                            "name": {
+                                "value": "なになにのために",
+                                "synonyms": [
+                                    "なになににとって",
+                                    "なになにに対して",
+                                    "ために"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "forward",
+                            "name": {
+                                "value": "前へ",
+                                "synonyms": [
+                                    "前方へ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "friend",
+                            "name": {
+                                "value": "友人",
+                                "synonyms": [
+                                    "友達"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "from",
+                            "name": {
+                                "value": "なになにからの",
+                                "synonyms": [
+                                    "なになにから離れて",
+                                    "からの",
+                                    "から"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "fun",
+                            "name": {
+                                "value": "おもしろいこと",
+                                "synonyms": [
+                                    "楽しさ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "get",
+                            "name": {
+                                "value": "手に入れる",
+                                "synonyms": [
+                                    "得る",
+                                    "受ける",
+                                    "受け取る",
+                                    "もらう"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "girl",
+                            "name": {
+                                "value": "女の子",
+                                "synonyms": [
+                                    "少女"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "glad",
+                            "name": {
+                                "value": "うれしい",
+                                "synonyms": [
+                                    "喜んで"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "go",
+                            "name": {
+                                "value": "行く",
+                                "synonyms": [
+                                    "いく"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "goal",
+                            "name": {
+                                "value": "ゴール",
+                                "synonyms": [
+                                    "目的"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "good",
+                            "name": {
+                                "value": "上手な",
+                                "synonyms": [
+                                    "うまい",
+                                    "じょうずな"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "grandfather",
+                            "name": {
+                                "value": "祖父",
+                                "synonyms": [
+                                    "おじいさん",
+                                    "おじいちゃん"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "grandmother",
+                            "name": {
+                                "value": "祖母",
+                                "synonyms": [
+                                    "おばあさん",
+                                    "おばあちゃん"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "great",
+                            "name": {
+                                "value": "非常な",
+                                "synonyms": [
+                                    "偉大な",
+                                    "すごい"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ground",
+                            "name": {
+                                "value": "地面",
+                                "synonyms": [
+                                    "地上",
+                                    "土地"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "group",
+                            "name": {
+                                "value": "グループ",
+                                "synonyms": [
+                                    "集団"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "gym",
+                            "name": {
+                                "value": "体育館",
+                                "synonyms": [
+                                    "ジム"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "hair",
+                            "name": {
+                                "value": "髪の毛",
+                                "synonyms": [
+                                    "体毛",
+                                    "毛",
+                                    "け"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "hamburger",
+                            "name": {
+                                "value": "ハンバーガー",
+                                "synonyms": [
+                                    "ハンバーグステーキ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "hand",
+                            "name": {
+                                "value": "手",
+                                "synonyms": [
+                                    "ハンド",
+                                    "て"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "hard",
+                            "name": {
+                                "value": "難しい",
+                                "synonyms": [
+                                    "困難な",
+                                    "堅い",
+                                    "硬い",
+                                    "かたい"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "head",
+                            "name": {
+                                "value": "頭",
+                                "synonyms": [
+                                    "あたま"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "hear",
+                            "name": {
+                                "value": "聞こえる",
+                                "synonyms": [
+                                    "聴こえる",
+                                    "きこえる"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "help",
+                            "name": {
+                                "value": "手伝う",
+                                "synonyms": [
+                                    "助ける"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "here",
+                            "name": {
+                                "value": "ここに",
+                                "synonyms": [
+                                    "ここで",
+                                    "ここへ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "high",
+                            "name": {
+                                "value": "高い",
+                                "synonyms": [
+                                    "たかい"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "hold",
+                            "name": {
+                                "value": "持つ",
+                                "synonyms": [
+                                    "にぎる",
+                                    "だく"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "hole",
+                            "name": {
+                                "value": "穴",
+                                "synonyms": [
+                                    "あな"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "holiday",
+                            "name": {
+                                "value": "祝日",
+                                "synonyms": [
+                                    "祭日",
+                                    "休日"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "home",
+                            "name": {
+                                "value": "家庭",
+                                "synonyms": [
+                                    "うちへ",
+                                    "故郷へ",
+                                    "本国へ",
+                                    "うちへもどって"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "homework",
+                            "name": {
+                                "value": "宿題",
+                                "synonyms": [
+                                    "ホームワーク"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "hope",
+                            "name": {
+                                "value": "希望する",
+                                "synonyms": [
+                                    "望む",
+                                    "希望"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "hospital",
+                            "name": {
+                                "value": "病院",
+                                "synonyms": [
+                                    "ホスピタル"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "hot",
+                            "name": {
+                                "value": "熱い",
+                                "synonyms": [
+                                    "暑い"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "house",
+                            "name": {
+                                "value": "住宅",
+                                "synonyms": [
+                                    "家屋",
+                                    "家宅"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "how",
+                            "name": {
+                                "value": "どれぐらい",
+                                "synonyms": [
+                                    "どのように",
+                                    "どのようにして",
+                                    "どんなふうに"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "hungry",
+                            "name": {
+                                "value": "空腹の",
+                                "synonyms": [
+                                    "飢えた"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "industrial",
+                            "name": {
+                                "value": "産業の",
+                                "synonyms": [
+                                    "工業の"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "interesting",
+                            "name": {
+                                "value": "おもしろい",
+                                "synonyms": [
+                                    "興味深い",
+                                    "面白い",
+                                    "面白"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "into",
+                            "name": {
+                                "value": "なになにの中へ",
+                                "synonyms": [
+                                    "の中に",
+                                    "の中へ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "join",
+                            "name": {
+                                "value": "なになにに加わる",
+                                "synonyms": [
+                                    "参加する",
+                                    "加わる"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "jump",
+                            "name": {
+                                "value": "はねる",
+                                "synonyms": [
+                                    "飛び越える",
+                                    "跳ねる"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "junior",
+                            "name": {
+                                "value": "下位の",
+                                "synonyms": [
+                                    "下級の",
+                                    "年下の"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "just",
+                            "name": {
+                                "value": "ちょうど",
+                                "synonyms": [
+                                    "ちょうど今",
+                                    "だけ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "kind",
+                            "name": {
+                                "value": "親切な",
+                                "synonyms": [
+                                    "種類"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "know",
+                            "name": {
+                                "value": "知っている",
+                                "synonyms": [
+                                    "知る",
+                                    "なになにとわかる"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "language",
+                            "name": {
+                                "value": "言語",
+                                "synonyms": [
+                                    "ことば",
+                                    "国語"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "last",
+                            "name": {
+                                "value": "この前の",
+                                "synonyms": [
+                                    "最近の",
+                                    "最後の"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "late",
+                            "name": {
+                                "value": "遅い",
+                                "synonyms": [
+                                    "遅れた"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "learn",
+                            "name": {
+                                "value": "学ぶ",
+                                "synonyms": [
+                                    "習う",
+                                    "覚える"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "leave",
+                            "name": {
+                                "value": "去る",
+                                "synonyms": [
+                                    "たつ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "letter",
+                            "name": {
+                                "value": "文字",
+                                "synonyms": [
+                                    "手紙"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "life",
+                            "name": {
+                                "value": "生活",
+                                "synonyms": [
+                                    "暮らし"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "like",
+                            "name": {
+                                "value": "なになにを好む",
+                                "synonyms": [
+                                    "なになにが好きである",
+                                    "なになにのように",
+                                    "なになにのような",
+                                    "なになにに似ている",
+                                    "なになにに似た",
+                                    "好む",
+                                    "好きである",
+                                    "のように",
+                                    "のような",
+                                    "似ている",
+                                    "似た"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "listen",
+                            "name": {
+                                "value": "耳を傾ける",
+                                "synonyms": [
+                                    "傾聴する"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "little",
+                            "name": {
+                                "value": "少し",
+                                "synonyms": [
+                                    "少ない",
+                                    "少年の",
+                                    "幼い"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "live",
+                            "name": {
+                                "value": "住む",
+                                "synonyms": [
+                                    "住んでいる"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "long",
+                            "name": {
+                                "value": "長い",
+                                "synonyms": [
+                                    "ながい"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "look",
+                            "name": {
+                                "value": "見る",
+                                "synonyms": [
+                                    "みる"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "lose",
+                            "name": {
+                                "value": "負ける",
+                                "synonyms": [
+                                    "まける"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "lot",
+                            "name": {
+                                "value": "たくさんのなになに",
+                                "synonyms": [
+                                    "たくさん"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "luck",
+                            "name": {
+                                "value": "運",
+                                "synonyms": [
+                                    "幸運",
+                                    "こううん"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "lunch",
+                            "name": {
+                                "value": "昼食",
+                                "synonyms": [
+                                    "お弁当"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "make",
+                            "name": {
+                                "value": "作る",
+                                "synonyms": [
+                                    "こしらえる"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "man",
+                            "name": {
+                                "value": "男性",
+                                "synonyms": [
+                                    "男"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "many",
+                            "name": {
+                                "value": "数々",
+                                "synonyms": [
+                                    "多い"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "mask",
+                            "name": {
+                                "value": "お面",
+                                "synonyms": [
+                                    "マスク"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "math",
+                            "name": {
+                                "value": "数学",
+                                "synonyms": [
+                                    "すうがく"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "mean",
+                            "name": {
+                                "value": "意味する",
+                                "synonyms": [
+                                    "なになにの意味である",
+                                    "意味"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "meet",
+                            "name": {
+                                "value": "会う",
+                                "synonyms": [
+                                    "出会う"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "member",
+                            "name": {
+                                "value": "会員",
+                                "synonyms": [
+                                    "メンバー"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "mine",
+                            "name": {
+                                "value": "私のもの",
+                                "synonyms": [
+                                    "私の"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "month",
+                            "name": {
+                                "value": "月",
+                                "synonyms": [
+                                    "ひと月"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "morning",
+                            "name": {
+                                "value": "朝",
+                                "synonyms": [
+                                    "午前"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "mother",
+                            "name": {
+                                "value": "母",
+                                "synonyms": [
+                                    "母親",
+                                    "お母さん"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "mountain",
+                            "name": {
+                                "value": "山",
+                                "synonyms": [
+                                    "マウンテン"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "move",
+                            "name": {
+                                "value": "動く",
+                                "synonyms": [
+                                    "移動する",
+                                    "動かす"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "movie",
+                            "name": {
+                                "value": "映画",
+                                "synonyms": [
+                                    "えいが"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "much",
+                            "name": {
+                                "value": "多量の",
+                                "synonyms": [
+                                    "多大"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "museum",
+                            "name": {
+                                "value": "博物館",
+                                "synonyms": [
+                                    "美術館"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "music",
+                            "name": {
+                                "value": "音楽",
+                                "synonyms": [
+                                    "ミュージック"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "nature",
+                            "name": {
+                                "value": "自然",
+                                "synonyms": [
+                                    "自然界"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "near",
+                            "name": {
+                                "value": "なになにの近くに",
+                                "synonyms": [
+                                    "なになにの近くの",
+                                    "近くに",
+                                    "近くの",
+                                    "ちかい",
+                                    "ちかくの"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "new",
+                            "name": {
+                                "value": "新しい",
+                                "synonyms": [
+                                    "あたらしい",
+                                    "目新しい",
+                                    "見慣れない"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "next",
+                            "name": {
+                                "value": "次の",
+                                "synonyms": [
+                                    "今度の",
+                                    "となりの",
+                                    "次に",
+                                    "今度"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "nice",
+                            "name": {
+                                "value": "すてきな",
+                                "synonyms": [
+                                    "すばらしい"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "night",
+                            "name": {
+                                "value": "夜",
+                                "synonyms": [
+                                    "よる"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "noodle",
+                            "name": {
+                                "value": "ヌードル",
+                                "synonyms": [
+                                    "麺",
+                                    "めん"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "now",
+                            "name": {
+                                "value": "今",
+                                "synonyms": [
+                                    "今は",
+                                    "現在は"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "number",
+                            "name": {
+                                "value": "数",
+                                "synonyms": [
+                                    "かず",
+                                    "番号"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "off",
+                            "name": {
+                                "value": "離れて",
+                                "synonyms": [
+                                    "去って",
+                                    "離して",
+                                    "取って"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "office",
+                            "name": {
+                                "value": "事務所",
+                                "synonyms": [
+                                    "事務室",
+                                    "会社"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "often",
+                            "name": {
+                                "value": "しばしば",
+                                "synonyms": [
+                                    "たびたび"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "old",
+                            "name": {
+                                "value": "古い",
+                                "synonyms": [
+                                    "昔からの"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "only",
+                            "name": {
+                                "value": "たった",
+                                "synonyms": [
+                                    "ほんの",
+                                    "つい"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "open",
+                            "name": {
+                                "value": "開く",
+                                "synonyms": [
+                                    "あける"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "other",
+                            "name": {
+                                "value": "ほかの",
+                                "synonyms": [
+                                    "たの",
+                                    "別の"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "out",
+                            "name": {
+                                "value": "外へ",
+                                "synonyms": [
+                                    "外を"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "parent",
+                            "name": {
+                                "value": "親",
+                                "synonyms": [
+                                    "おや"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "park",
+                            "name": {
+                                "value": "公園",
+                                "synonyms": [
+                                    "遊園地"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "pass",
+                            "name": {
+                                "value": "渡す",
+                                "synonyms": [
+                                    "パス"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "pencil",
+                            "name": {
+                                "value": "鉛筆",
+                                "synonyms": [
+                                    "えんぴつ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "people",
+                            "name": {
+                                "value": "人々",
+                                "synonyms": [
+                                    "人たち"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "picture",
+                            "name": {
+                                "value": "写真",
+                                "synonyms": [
+                                    "絵",
+                                    "え",
+                                    "エ",
+                                    "画像",
+                                    "図"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "place",
+                            "name": {
+                                "value": "場所",
+                                "synonyms": [
+                                    "ところ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "play",
+                            "name": {
+                                "value": "する",
+                                "synonyms": [
+                                    "試合をする",
+                                    "演奏する"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "please",
+                            "name": {
+                                "value": "どうぞ",
+                                "synonyms": [
+                                    "すみませんが",
+                                    "お願いいたします",
+                                    "お願いします"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "pool",
+                            "name": {
+                                "value": "プール",
+                                "synonyms": [
+                                    "水たまり"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "popular",
+                            "name": {
+                                "value": "人気のある",
+                                "synonyms": [
+                                    "流行の"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "post",
+                            "name": {
+                                "value": "郵便",
+                                "synonyms": [
+                                    "ポスト",
+                                    "役職"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "practice",
+                            "name": {
+                                "value": "練習する",
+                                "synonyms": [
+                                    "けいこをする"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "present",
+                            "name": {
+                                "value": "贈り物",
+                                "synonyms": [
+                                    "プレゼント"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "problem",
+                            "name": {
+                                "value": "かだい",
+                                "synonyms": [
+                                    "課題"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "put",
+                            "name": {
+                                "value": "置く",
+                                "synonyms": [
+                                    "つける"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "question",
+                            "name": {
+                                "value": "質問",
+                                "synonyms": [
+                                    "問い",
+                                    "とい"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "quickly",
+                            "name": {
+                                "value": "すばやく",
+                                "synonyms": [
+                                    "速く"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "race",
+                            "name": {
+                                "value": "競争",
+                                "synonyms": [
+                                    "競走"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "read",
+                            "name": {
+                                "value": "読む",
+                                "synonyms": [
+                                    "読書する"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ready",
+                            "name": {
+                                "value": "用意ができて",
+                                "synonyms": [
+                                    "準備ができて"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "really",
+                            "name": {
+                                "value": "ほんと",
+                                "synonyms": [
+                                    "本当に",
+                                    "実際に"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "restaurant",
+                            "name": {
+                                "value": "レストラン",
+                                "synonyms": [
+                                    "飲食店"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "restroom",
+                            "name": {
+                                "value": "洗面所",
+                                "synonyms": [
+                                    "トイレ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "rice",
+                            "name": {
+                                "value": "米",
+                                "synonyms": [
+                                    "ごはん"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "right",
+                            "name": {
+                                "value": "正しい",
+                                "synonyms": [
+                                    "まちがっていない",
+                                    "そのとおり",
+                                    "右",
+                                    "権利"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "river",
+                            "name": {
+                                "value": "川",
+                                "synonyms": [
+                                    "河"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "room",
+                            "name": {
+                                "value": "部屋",
+                                "synonyms": [
+                                    "室"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "rope",
+                            "name": {
+                                "value": "綱",
+                                "synonyms": [
+                                    "なわ",
+                                    "ロープ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "run",
+                            "name": {
+                                "value": "走る",
+                                "synonyms": [
+                                    "走っていく"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "say",
+                            "name": {
+                                "value": "申す",
+                                "synonyms": [
+                                    "おっしゃる",
+                                    "申し上げる"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "school",
+                            "name": {
+                                "value": "学校",
+                                "synonyms": [
+                                    "がっこう"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "science",
+                            "name": {
+                                "value": "理科",
+                                "synonyms": [
+                                    "自然科学",
+                                    "科学"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "sea",
+                            "name": {
+                                "value": "海",
+                                "synonyms": [
+                                    "うみ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "season",
+                            "name": {
+                                "value": "季節",
+                                "synonyms": [
+                                    "シーズン"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "see",
+                            "name": {
+                                "value": "見える",
+                                "synonyms": [
+                                    "見物する",
+                                    "会う"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "send",
+                            "name": {
+                                "value": "送る",
+                                "synonyms": [
+                                    "出す"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "shop",
+                            "name": {
+                                "value": "小売店",
+                                "synonyms": [
+                                    "店"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "short",
+                            "name": {
+                                "value": "短い",
+                                "synonyms": [
+                                    "背が低い"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "show",
+                            "name": {
+                                "value": "見せる",
+                                "synonyms": [
+                                    "示す"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "sing",
+                            "name": {
+                                "value": "歌う",
+                                "synonyms": [
+                                    "うたう"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "sister",
+                            "name": {
+                                "value": "姉妹",
+                                "synonyms": [
+                                    "姉",
+                                    "妹"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "sit",
+                            "name": {
+                                "value": "座る",
+                                "synonyms": [
+                                    "座っている"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "sky",
+                            "name": {
+                                "value": "空",
+                                "synonyms": [
+                                    "そら"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "small",
+                            "name": {
+                                "value": "小さい",
+                                "synonyms": [
+                                    "しょう"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "social",
+                            "name": {
+                                "value": "社会の",
+                                "synonyms": [
+                                    "社会的な"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "some",
+                            "name": {
+                                "value": "いくつかの",
+                                "synonyms": [
+                                    "いくらかの"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "something",
+                            "name": {
+                                "value": "何か",
+                                "synonyms": [
+                                    "あるもの"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "sometimes",
+                            "name": {
+                                "value": "時々",
+                                "synonyms": [
+                                    "時には"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "son",
+                            "name": {
+                                "value": "息子",
+                                "synonyms": [
+                                    "むすこ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "song",
+                            "name": {
+                                "value": "うた",
+                                "synonyms": [
+                                    "歌"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "speak",
+                            "name": {
+                                "value": "しゃべる",
+                                "synonyms": [
+                                    "喋る"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "special",
+                            "name": {
+                                "value": "特別の",
+                                "synonyms": [
+                                    "特殊な"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "speech",
+                            "name": {
+                                "value": "演説",
+                                "synonyms": [
+                                    "スピーチ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "stand",
+                            "name": {
+                                "value": "立つ",
+                                "synonyms": [
+                                    "立っている"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "start",
+                            "name": {
+                                "value": "始める",
+                                "synonyms": [
+                                    "始まる"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "story",
+                            "name": {
+                                "value": "物語",
+                                "synonyms": [
+                                    "話"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "street",
+                            "name": {
+                                "value": "通り",
+                                "synonyms": [
+                                    "道"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "strong",
+                            "name": {
+                                "value": "強い",
+                                "synonyms": [
+                                    "つよい"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "student",
+                            "name": {
+                                "value": "生徒",
+                                "synonyms": [
+                                    "学生"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "study",
+                            "name": {
+                                "value": "勉強する",
+                                "synonyms": [
+                                    "研究する"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "subject",
+                            "name": {
+                                "value": "教科",
+                                "synonyms": [
+                                    "科目",
+                                    "主題",
+                                    "件名"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "sure",
+                            "name": {
+                                "value": "もちろん",
+                                "synonyms": [
+                                    "承知しました"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "swim",
+                            "name": {
+                                "value": "泳ぐ",
+                                "synonyms": [
+                                    "およぐ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "table",
+                            "name": {
+                                "value": "テーブル",
+                                "synonyms": [
+                                    "食卓"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "take",
+                            "name": {
+                                "value": "つかむ",
+                                "synonyms": [
+                                    "持って行く"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "talk",
+                            "name": {
+                                "value": "話し",
+                                "synonyms": [
+                                    "しゃべる",
+                                    "話をする"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "teach",
+                            "name": {
+                                "value": "教える",
+                                "synonyms": [
+                                    "おしえる"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "teacher",
+                            "name": {
+                                "value": "先生",
+                                "synonyms": [
+                                    "教師"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "team",
+                            "name": {
+                                "value": "チーム",
+                                "synonyms": [
+                                    "組",
+                                    "くみ",
+                                    "団"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "tell",
+                            "name": {
+                                "value": "語る",
+                                "synonyms": [
+                                    "教える",
+                                    "なになにを伝える",
+                                    "伝える"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "terrible",
+                            "name": {
+                                "value": "恐ろしい",
+                                "synonyms": [
+                                    "ひどい"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "textbook",
+                            "name": {
+                                "value": "教科書",
+                                "synonyms": [
+                                    "きょうかしょ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "think",
+                            "name": {
+                                "value": "考える",
+                                "synonyms": [
+                                    "思う"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "thousand",
+                            "name": {
+                                "value": "千の",
+                                "synonyms": [
+                                    "せん",
+                                    "千"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "throw",
+                            "name": {
+                                "value": "投げる",
+                                "synonyms": [
+                                    "なげる"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "time",
+                            "name": {
+                                "value": "時間",
+                                "synonyms": [
+                                    "時刻",
+                                    "なん回",
+                                    "なんど"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "tired",
+                            "name": {
+                                "value": "疲れて",
+                                "synonyms": [
+                                    "くたびれて"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "today",
+                            "name": {
+                                "value": "今日",
+                                "synonyms": [
+                                    "きょう"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "tomorrow",
+                            "name": {
+                                "value": "あした",
+                                "synonyms": [
+                                    "明日",
+                                    "あす"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "town",
+                            "name": {
+                                "value": "町",
+                                "synonyms": [
+                                    "まち"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "track",
+                            "name": {
+                                "value": "走路",
+                                "synonyms": [
+                                    "トラック"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "train",
+                            "name": {
+                                "value": "電車",
+                                "synonyms": [
+                                    "列車"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "tree",
+                            "name": {
+                                "value": "木",
+                                "synonyms": [
+                                    "樹木"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "trip",
+                            "name": {
+                                "value": "旅行",
+                                "synonyms": [
+                                    "出かけること"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "uncle",
+                            "name": {
+                                "value": "おじ",
+                                "synonyms": [
+                                    "叔父",
+                                    "おじさん"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "under",
+                            "name": {
+                                "value": "なになにの下に",
+                                "synonyms": [
+                                    "なになにの下で",
+                                    "したに",
+                                    "したで"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "up",
+                            "name": {
+                                "value": "起きて",
+                                "synonyms": [
+                                    "まっすぐ立てて",
+                                    "うえ",
+                                    "上へ",
+                                    "上の方へ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "use",
+                            "name": {
+                                "value": "使う",
+                                "synonyms": [
+                                    "使用する",
+                                    "利用する"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "usually",
+                            "name": {
+                                "value": "たいてい",
+                                "synonyms": [
+                                    "ふつう"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "very",
+                            "name": {
+                                "value": "とても",
+                                "synonyms": [
+                                    "非常に",
+                                    "大変"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "visit",
+                            "name": {
+                                "value": "訪問する",
+                                "synonyms": [
+                                    "訪れる",
+                                    "訪問"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "voice",
+                            "name": {
+                                "value": "声",
+                                "synonyms": [
+                                    "音声"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "volunteer",
+                            "name": {
+                                "value": "志願者",
+                                "synonyms": [
+                                    "ボランティア"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "walk",
+                            "name": {
+                                "value": "散歩させる",
+                                "synonyms": [
+                                    "歩く"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "wall",
+                            "name": {
+                                "value": "塀",
+                                "synonyms": [
+                                    "外壁",
+                                    "壁"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "want",
+                            "name": {
+                                "value": "ほしい",
+                                "synonyms": [
+                                    "ほしがる"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "wash",
+                            "name": {
+                                "value": "洗う",
+                                "synonyms": [
+                                    "洗濯する"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "watch",
+                            "name": {
+                                "value": "時計",
+                                "synonyms": [
+                                    "とけい"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "water",
+                            "name": {
+                                "value": "水",
+                                "synonyms": [
+                                    "みず"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "wear",
+                            "name": {
+                                "value": "身に着けている",
+                                "synonyms": [
+                                    "着ている",
+                                    "はいている",
+                                    "かぶっている",
+                                    "着る"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "week",
+                            "name": {
+                                "value": "週",
+                                "synonyms": [
+                                    "一週間"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "weekend",
+                            "name": {
+                                "value": "週末",
+                                "synonyms": [
+                                    "しゅうまつ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "welcome",
+                            "name": {
+                                "value": "歓迎される",
+                                "synonyms": [
+                                    "優待",
+                                    "歓迎"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "why",
+                            "name": {
+                                "value": "なぜ",
+                                "synonyms": [
+                                    "どうして"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "win",
+                            "name": {
+                                "value": "勝つ",
+                                "synonyms": [
+                                    "かつ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "window",
+                            "name": {
+                                "value": "窓",
+                                "synonyms": [
+                                    "まど"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "woman",
+                            "name": {
+                                "value": "女性",
+                                "synonyms": [
+                                    "女"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "work",
+                            "name": {
+                                "value": "働く",
+                                "synonyms": [
+                                    "はたらく",
+                                    "仕事",
+                                    "作業"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "write",
+                            "name": {
+                                "value": "もじをかく",
+                                "synonyms": [
+                                    "文字を書く"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "year",
+                            "name": {
+                                "value": "年",
+                                "synonyms": [
+                                    "一年",
+                                    "ねん"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "yesterday",
+                            "name": {
+                                "value": "昨日",
+                                "synonyms": [
+                                    "きのう"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "zoo",
+                            "name": {
+                                "value": "動物園",
+                                "synonyms": [
+                                    "どうぶつえん"
+                                ]
+                            }
+                        }
+                    ],
+                    "name": "WordsListJHOne"
+                }
+            ]
+        }
+    }
+}
